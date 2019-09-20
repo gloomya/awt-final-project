@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" href="style.css" type="text/css">
+        <link rel="stylesheet" href="icofont.min.css" type="text/css">
+        <meta name="description" content="The contact page of the ebsite for the final project of the Adwansed Web Technologies course.">
+        <script src="script.js" async></script>
+        <title>Contacts - AWT Final Project</title>
+    </head>
+    <body>
+        <header>
+            
+            <nav>
+            <a href="index.html" class="logo-link">
+                <div class="logo">
+                    <i class="icofont-triangle icofont-3x" style="line-height: 1.25;"></i>
+                </div>
+                <div class="title">
+                    FutureFurniture
+                </div>
+            </a>
+                <ul class="menu">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="work.html">Work</a></li>
+                    <li><a href="about.html">What we do</a></li>
+                    <li><a href="contact.html" class="current">Contact</a></li>
+                    <li><a href="quote.html" class="active">Get a quote</a></li>
+                </ul>
+            </nav>
+        </header>
+        <main>
+            <section class="contacts">
+                <div class="wrapper">
+                    <div class="maptext">
+                        <h2>Contact us</h2>
+                        <p>Feel free to stop by at our office <br> or drop us a line using the form below.</p>
+                        <div class="smallcontact">
+                            <p>Phone – +1(012)383-6628</p>
+                            <p>Office – info@futurefurniture.com</p>
+                            <p>Sales – hello@futurefurniture.com</p>
+                        </div>
+                    </div>
+                    <div class="mapimg">
+                        <i class="icofont-triangle icofont-2x"></i>
+                        <img src="images/map.png" alt="ontario map">
+                    </div>
+                </div>
+            </section>
+            <section class="contactfrom wrapper">
+                <form action="" method="POST" class="cform" id="ffform">
+                    <h4 id="thanktext">Send us a message via contact form</h4>
+                    <input type="text" name="Name" id="name" placeholder="Name"><br>
+                    <input type="email" name="Email" id="email" placeholder="Email"><br>
+                    <textarea name="message" id="message" cols="30" rows="10" placeholder="Message"></textarea><br>
+                    <button type="submit" id="smt" onclick="thankMsg()">Send</button>
+                </form>
+                <div class="contactinfo-right">
+                        <div>
+                            <h4>Address</h4>
+                            <p class="addr">
+                            FutureFurniture <br>
+                            1 Royal York Blvd, <br> M4TN5Y
+                            Toronto, <br> ON Canada</p>
+                        </div>
+                        <div>
+                            <h4>Working hours</h4>
+                            <p class="whours">From Monday to Friday. <br>
+                            From 11:00 AM to 8:00 PM</p>
+                        </div>
+                    </div>
+            </section>
+        </main>
+        <footer>
+            <div class="lfooter">
+                &copy; 2019 FutureFurniture - AWT Final Project by <a href="https://volodkovich.com" target="_blank">AV</a>. All Rights Reserved.
+            </div>
+            <div class="rfooter">
+                    <ul class="fmenu">
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="work.html">Work</a></li>
+                        <li><a href="about.html">What we do</a></li>
+                        <li><a href="contact.html" class="last">Contact</a></li>
+                    </ul>
+            </div>
+        </footer>
+    </body>
+</html>

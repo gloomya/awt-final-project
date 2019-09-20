@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" href="style.css" type="text/css">
+        <link rel="stylesheet" href="icofont.min.css" type="text/css">
+        <meta name="description" content="The get a quote page of the ebsite for the final project of the Adwansed Web Technologies course.">
+        <script src="script.js" async></script>
+        <title>Get a Quote - AWT Final Project</title>
+    </head>
+    <body>
+        <header>
+            
+            <nav>
+            <a href="index.html" class="logo-link">
+                <div class="logo">
+                    <i class="icofont-triangle icofont-3x" style="line-height: 1.25;"></i>
+                </div>
+                <div class="title">
+                    FutureFurniture
+                </div>
+            </a>
+                <ul class="menu">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="work.html">Work</a></li>
+                    <li><a href="about.html">What we do</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                    <li><a href="quote.html" class="current">Get a quote</a></li>
+                </ul>
+            </nav>
+        </header>
+        <main>
+            <section class="pageheader">
+                <h1>Use our calculator to get the estimate</h1>
+            </section>
+            <section class="calculator wrapper">
+                <form action="" id="calcform" class="fcalc">
+                    <p>How many couches do you need?</p>
+                        <input type="number" name="couch" min="1" id="couch" onkeyup="calc()">
+                    <p>How many armchairs do you need?</p>
+                        <input  type="number" name="armchair" min="1" id="armchair" onkeyup="calc()">
+                    <p>Chose the production time:</p>
+                        <input type="number" name="ptime" id="ptime" min="1" onkeyup="calc()">
+                        <select name="design" id="design" size="1" type="number" onchange="calc()">
+                              <option value="1">Year(s)</option>
+                              <option value="12">Month(s)</option>
+                              <option value="365">Day(s)</option>
+                          </select>
+                  <p>Materials quality</p>
+                  <input id="materials" type="range" min="0.5" max="10" step="0.5" value="9" oninput="outputUpdate(this.value)">
+                  <output for="materials" id="volume"> 9 </output>
+                  <br>
+
+                  <p>Finish quality</p>
+                  <input id="finish" type="range" min="1" max="100" step="1" value="20" oninput="outputUpdate2(this.value)">
+                  <output for="finish" id="volume2"> 20 </output>
+                    <h3 id="estimate">Your Estimate = $0.00</h3>
+                </form>
+            </section>
+        </main>
+        <footer>
+            <div class="lfooter">
+                &copy; 2019 FutureFurniture - AWT Final Project by <a href="https://volodkovich.com" target="_blank">AV</a>. All Rights Reserved.
+            </div>
+            <div class="rfooter">
+                    <ul class="fmenu">
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="work.html">Work</a></li>
+                        <li><a href="about.html">What we do</a></li>
+                        <li><a href="contact.html" class="last">Contact</a></li>
+                    </ul>
+            </div>
+        </footer>
+    </body>
+</html>
