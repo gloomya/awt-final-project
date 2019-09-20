@@ -86,6 +86,7 @@ main {
     clear: both;
     background: #f0f0f2;
     display: inline;
+    z-index: 10;
 }
 .hero {
     width: 100vw;
@@ -479,6 +480,7 @@ footer a:hover{
         width: 100%;
         padding:0;
         z-index: 9999;
+        position: fixed;
     }
     .menu li {
         float: none;
