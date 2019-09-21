@@ -18,6 +18,9 @@ nav {
     background: #f0f0f2;
     vertical-align: middle;
 }
+.icon {
+    display: none;
+}
 .logo-link {
     color: #15171e;
     text-decoration: none;
@@ -46,6 +49,7 @@ nav {
     vertical-align: baseline;
     margin: 0;
     padding: 20px 0;
+    overflow: hidden;
 }
 .menu ul{
     position: relative;
@@ -163,7 +167,7 @@ main {
 .modal {
     display: none; 
     position: fixed; 
-    z-index: 1; 
+    z-index: 0; 
     padding-top: 100px; 
     left: 0;
     top: 0;
@@ -380,6 +384,7 @@ main {
     width: 82%;
     font-size: 1em;
     cursor: pointer;
+    border: none;
 }
 .calculator {
     font-size: 1.2em;
@@ -428,6 +433,7 @@ footer {
     vertical-align: top;
     position: relative;
     font-size: 0.9em;
+    clear: both;
 }
 footer a{
     color: #72747c;
@@ -464,8 +470,86 @@ footer a:hover{
     border: none!important;
 }
 /* >>>>>>>>>> Responsive >>>>>>>>>> */
-@media only screen and (max-width: 700px){
+@media only screen and (max-width: 60em){
     .modal-content {
       width: 100%;
     }
+    .menu {
+        float: none;
+        width: 100%;
+        padding:0;
+        z-index: 9999;
+    }
+    .menu li {
+        float: none;
+        background: #e0e0e0;
+    }
+    .menu a {display: none;}
+    .menu a.icon {
+
+      display: block;
+      top: 0!important;
+    }
+    .menu .responsive {position: relative; top:0;}
+    .menu .responsive a.icon {
+      position: absolute;
+      right: 0;
+      top: 0;
+      width: 100%;
+    }
+    .menu.responsive a {
+      float: none;
+      display: block;
+      text-align: left;
+    }
+    .pageheader {
+        display: block;
+        margin-top: 4em; 
+    }
+    .projects {
+        margin: 3em auto;
+        display: grid;
+        grid-template-columns: repeat(1, 4fr);
+        grid-gap: 2em;
+        grid-auto-rows: minmax(300px, auto);
+    }
+    .who {
+        margin: 2em auto;
+        display: grid;
+        grid-template-columns: repeat(1, 3fr);
+        grid-gap: 2em;
+        grid-auto-rows: minmax(100px, auto);
+        padding-top: 2em;
+    }
+    .trio {
+        display: grid;
+        grid-template-columns: repeat(1, 3fr);
+        grid-gap: 2em;
+        grid-auto-rows: minmax(300px, auto);     
+    }
+    .info-bottom {
+        display: inline-grid;
+        grid-template-columns: repeat(1, 2fr);
+        grid-gap: 2em;
+        grid-auto-rows: minmax(100px, auto);
+    }
+    .contactfrom {
+        clear: both;
+        display: grid;
+        grid-template-columns: repeat(1, 2fr);
+        grid-gap: 2em;
+        grid-auto-rows: minmax(100px, auto);
+        padding:3em 0;
+    }
+    .about-info article {
+        width: 100%;
+    }
+    .lfooter, .rfooter {
+        float: none;
+        position: relative;
+    }
+    .fmenu {
+        margin-top: 1em;
+    }
+    
 }

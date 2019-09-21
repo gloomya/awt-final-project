@@ -1,3 +1,11 @@
+function menuShow() {
+  var menu = document.getElementById("topmenu");
+  if (menu.className === "menu") {
+    menu.className += " responsive";
+  } else {
+    menu.className = "menu";
+  }
+}
 function thankMsg() {
     var fname = " " + document.getElementById("name").value + " ";
     document.getElementById("name").style.display = "none";
@@ -31,6 +39,7 @@ function calc(){
     document.getElementById('estimate').innerHTML = "Your Estimate = " + "$ " + estimate;
 
 }
+
 // Project image 1
 
 var modal1 = document.getElementById("pr1Modal");
